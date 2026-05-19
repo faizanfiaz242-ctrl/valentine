@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mohammad Faizan Fiaz | Portfolio</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      scroll-behavior:smooth;
+      font-family:Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#0f172a;
+      color:white;
+      line-height:1.6;
+    }
+
+    nav{
+      position:fixed;
+      top:0;
+      width:100%;
+      background:rgba(15,23,42,0.95);
+      padding:20px 10%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      z-index:1000;
+      border-bottom:1px solid rgba(255,255,255,0.1);
+    }
+
+    nav h1{
+      color:#38bdf8;
+      font-size:24px;
+    }
+
+    nav ul{
+      display:flex;
+      gap:20px;
+      list-style:none;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#38bdf8;
+    }
+
+    header{
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding:120px 10%;
+      background:linear-gradient(to bottom right,#0f172a,#111827);
+    }
+
+    .hero h2{
+      font-size:55px;
+      margin-bottom:15px;
+    }
+
+    .hero span{
+      color:#38bdf8;
+    }
+
+    .hero p{
+      max-width:700px;
+      margin:auto;
+      color:#cbd5e1;
+      font-size:18px;
+    }
+
+    .btn{
+      display:inline-block;
+      margin-top:30px;
+      padding:14px 28px;
+      background:#38bdf8;
+      color:#0f172a;
+      text-decoration:none;
+      font-weight:bold;
+      border-radius:8px;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      transform:translateY(-3px);
+      background:#7dd3fc;
+    }
+
+    section{
+      padding:100px 10%;
+    }
+
+    .section-title{
+      font-size:40px;
+      margin-bottom:40px;
+      color:#38bdf8;
+      text-align:center;
+    }
+
+    .about,
+    .skills,
+    .projects,
+    .contact{
+      max-width:1200px;
+      margin:auto;
+    }
+
+    .about p{
+      text-align:center;
+      color:#cbd5e1;
+      max-width:850px;
+      margin:auto;
+      font-size:18px;
+    }
+
+    .skills-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:20px;
+      margin-top:40px;
+    }
+
+    .skill-card{
+      background:#1e293b;
+      padding:25px;
+      border-radius:12px;
+      text-align:center;
+      border:1px solid rgba(255,255,255,0.05);
+      transition:0.3s;
+    }
+
+    .skill-card:hover{
+      transform:translateY(-5px);
+      border-color:#38bdf8;
+    }
+
+    .projects-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+      gap:25px;
+      margin-top:40px;
+    }
+
+    .project-card{
+      background:#1e293b;
+      padding:25px;
+      border-radius:12px;
+      transition:0.3s;
+      border:1px solid rgba(255,255,255,0.05);
+    }
+
+    .project-card:hover{
+      transform:translateY(-5px);
+      border-color:#38bdf8;
+    }
+
+    .project-card h3{
+      margin-bottom:10px;
+      color:#38bdf8;
+    }
+
+    .project-card p{
+      color:#cbd5e1;
+    }
+
+    .contact{
+      text-align:center;
+    }
+
+    .contact p{
+      margin-bottom:15px;
+      color:#cbd5e1;
+      font-size:18px;
+    }
+
+    footer{
+      text-align:center;
+      padding:25px;
+      border-top:1px solid rgba(255,255,255,0.08);
+      color:#94a3b8;
+    }
+
+    @media(max-width:768px){
+
+      nav{
+        flex-direction:column;
+        gap:15px;
+      }
+
+      .hero h2{
+        font-size:40px;
+      }
+
+      .hero p{
+        font-size:16px;
+      }
+
+      .section-title{
+        font-size:32px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <h1>SF Portfolio</h1>
+
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <div class="hero">
+
+      <h2>
+        Hi, I'm <span>Mohammad Faizan Fiaz</span>
+      </h2>
+
+      <p>
+        Aspiring Cybersecurity & Software Engineer passionate about technology,
+        troubleshooting systems, digital innovation, and building impactful ideas.
+        I enjoy solving technical problems and creating modern tech solutions.
+      </p>
+
+      <a href="#projects" class="btn">
+        View Projects
+      </a>
+
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="about">
+
+      <h2 class="section-title">About Me</h2>
+
+      <p>
+        I have experience working with software systems, troubleshooting technical
+        issues, and managing digital platforms. My interests include cybersecurity,
+        software engineering, fintech, networking, and modern web technologies.
+        I enjoy building projects that combine technology with real-world solutions.
+      </p>
+
+    </div>
+  </section>
+
+  <section id="skills">
+
+    <div class="skills">
+
+      <h2 class="section-title">Skills</h2>
+
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <h3>Cybersecurity</h3>
+          <p>Security fundamentals, online safety, and system awareness.</p>
+        </div>
+
+        <div class="skill-card">
+          <h3>Networking</h3>
+          <p>Understanding network structures and troubleshooting.</p>
+        </div>
+
+        <div class="skill-card">
+          <h3>Web Development</h3>
+          <p>HTML, CSS, responsive design, and UI concepts.</p>
+        </div>
+
+        <div class="skill-card">
+          <h3>Software Troubleshooting</h3>
+          <p>Experience solving software and platform-related issues.</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="projects">
+
+    <div class="projects">
+
+      <h2 class="section-title">Projects</h2>
+
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <h3>HalalPay Global</h3>
+
+          <p>
+            A Shariah-compliant multi-currency transfer app concept designed as
+            an ethical alternative to modern fintech platforms.
+          </p>
+        </div>
+
+        <div class="project-card">
+          <h3>VPN Service Concept</h3>
+
+          <p>
+            Research and planning around creating a secure VPN platform focused
+            on privacy and internet protection.
+          </p>
+        </div>
+
+        <div class="project-card">
+          <h3>Takaful App Prototype</h3>
+
+          <p>
+            A modern Islamic insurance app concept inspired by ethical fintech
+            and modern mobile experiences.
+          </p>
+        </div>
+
+        <div class="project-card">
+          <h3>Zakah Tracker</h3>
+
+          <p>
+            A Hanafi-focused Zakah calculator and tracker concept to help users
+            manage Islamic finances accurately.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="contact">
+
+    <div class="contact">
+
+      <h2 class="section-title">Contact</h2>
+
+      <p>Email: your@email.com</p>
+
+      <p>GitHub: github.com/yourusername</p>
+
+      <p>LinkedIn: linkedin.com/in/yourprofile</p>
+
+    </div>
+
+  </section>
+
+  <footer>
+    © 2026 Mohammad Faizan Fiaz — Portfolio Website
+  </footer>
+
+</body>
+</html>
